@@ -1,0 +1,153 @@
+{
+  "name": "runtime",
+  "vendor": "ecmal",
+  "version": "0.0.8",
+  "registry": "github",
+  "format": "System",
+  "bundle": true,
+  "libraries": {
+    "core": "0.0.8"
+  },
+  "author": {
+    "name": "Sergey Mamyan",
+    "email": "sergey.mamyan@gmail.com"
+  },
+  "commit": "a8fc4d55a860574eba7abc72f33717b4be12b7d0",
+  "repository": "https://github.com/ecmal/runtime.git",
+  "modules": {
+    "decorators": {
+      "name": "decorators",
+      "version": "b1c387b32a73d426f7b1a122005f49ac",
+      "files": {
+        ".ts": {
+          "size": 732,
+          "hash": "b1c387b32a73d426f7b1a122005f49ac"
+        }
+      }
+    },
+    "events": {
+      "name": "events",
+      "version": "d064e9b32d3882b223fb39967f22f076",
+      "files": {
+        ".ts": {
+          "size": 2276,
+          "hash": "d064e9b32d3882b223fb39967f22f076"
+        }
+      }
+    },
+    "helpers": {
+      "name": "helpers",
+      "version": "36cde26e21d66f962f91fa967a938448",
+      "files": {
+        ".ts": {
+          "size": 1687,
+          "hash": "36cde26e21d66f962f91fa967a938448"
+        }
+      }
+    },
+    "loader": {
+      "name": "loader",
+      "version": "95f66f3774da957efc986788c4557449",
+      "files": {
+        ".ts": {
+          "size": 132,
+          "hash": "95f66f3774da957efc986788c4557449"
+        }
+      }
+    },
+    "module": {
+      "name": "module",
+      "version": "1f2e5271e75c8c379c1a54cad75857f8",
+      "files": {
+        ".ts": {
+          "size": 5001,
+          "hash": "1f2e5271e75c8c379c1a54cad75857f8"
+        }
+      }
+    },
+    "package": {
+      "name": "package",
+      "version": "8b6ca50d2e49d795d6938f5bf44e6ccf",
+      "size": 57136,
+      "hash": "28a389ce9bd33ef59866093e1051111f",
+      "files": {
+        ".ts": {
+          "size": 4467,
+          "hash": "8b6ca50d2e49d795d6938f5bf44e6ccf"
+        },
+        ".js.map": {
+          "size": 86578,
+          "hash": "99f1f189b3f776269181ed3d78b0bb1d"
+        },
+        ".js": {
+          "size": 57136,
+          "hash": "28a389ce9bd33ef59866093e1051111f"
+        },
+        ".d.ts": {
+          "size": 7234,
+          "hash": "d18c31f6e453a83c0c401b00482e8366"
+        }
+      }
+    },
+    "system": {
+      "name": "system",
+      "version": "7bace6cf47130d1753792b58a7ddf280",
+      "files": {
+        ".ts": {
+          "size": 4477,
+          "hash": "7bace6cf47130d1753792b58a7ddf280"
+        }
+      }
+    },
+    "loaders/base": {
+      "name": "loaders/base",
+      "version": "9cbd7e16b2b94d9cd823a6ee2ef15462",
+      "files": {
+        ".ts": {
+          "size": 3530,
+          "hash": "9cbd7e16b2b94d9cd823a6ee2ef15462"
+        }
+      }
+    },
+    "loaders/browser": {
+      "name": "loaders/browser",
+      "version": "d6526f12c6cec62f86ffa51364df180e",
+      "files": {
+        ".ts": {
+          "size": 1468,
+          "hash": "d6526f12c6cec62f86ffa51364df180e"
+        }
+      }
+    },
+    "loaders/node": {
+      "name": "loaders/node",
+      "version": "faebe7ec20640169605f577b921740f3",
+      "files": {
+        ".ts": {
+          "size": 2393,
+          "hash": "faebe7ec20640169605f577b921740f3"
+        }
+      }
+    },
+    "reflect/class": {
+      "name": "reflect/class",
+      "version": "2ade4ee4b49e67209440bd32fd0d0b6e",
+      "files": {
+        ".ts": {
+          "size": 16533,
+          "hash": "2ade4ee4b49e67209440bd32fd0d0b6e"
+        }
+      }
+    },
+    "reflect/declaration": {
+      "name": "reflect/declaration",
+      "version": "b193a8e8b8388240efa2409cf30a6c11",
+      "files": {
+        ".ts": {
+          "size": 443,
+          "hash": "b193a8e8b8388240efa2409cf30a6c11"
+        }
+      }
+    }
+  }
+}

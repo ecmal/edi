@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="#">
+    <script main src="./out/runtime/package.js"></script>
+</head>
+<body>
+    <script>
+        system.import('mioc/main').catch(function(e){
+            console.error(e.stack);
+            process.exit(1);
+        });
+    </script>
+</body>
+</html>

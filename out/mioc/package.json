@@ -1,0 +1,181 @@
+{
+  "name": "mioc",
+  "vendor": "ecmal",
+  "version": "0.0.1",
+  "registry": "github",
+  "bundle": false,
+  "libraries": {
+    "core": "0.0.8",
+    "runtime": "0.0.8"
+  },
+  "modules": {
+    "index": {
+      "name": "index",
+      "version": "bd854f567cddab073ab66d8e833c0a57",
+      "size": 689,
+      "hash": "5d9603c8c0d3a9e34340ad7aaec20756",
+      "files": {
+        ".ts": {
+          "size": 84,
+          "hash": "bd854f567cddab073ab66d8e833c0a57"
+        },
+        ".js.map": {
+          "size": 286,
+          "hash": "4a1380c4ccd7cc0099305ebd8d2fe37c"
+        },
+        ".js": {
+          "size": 689,
+          "hash": "5d9603c8c0d3a9e34340ad7aaec20756"
+        },
+        ".d.ts": {
+          "size": 84,
+          "hash": "bd854f567cddab073ab66d8e833c0a57"
+        }
+      }
+    },
+    "inject": {
+      "name": "inject",
+      "version": "67235e920580a2d4190dbfc40956a136",
+      "size": 1017,
+      "hash": "367eacaff3c2a0472346e4415e241840",
+      "files": {
+        ".ts": {
+          "size": 267,
+          "hash": "67235e920580a2d4190dbfc40956a136"
+        },
+        ".js.map": {
+          "size": 749,
+          "hash": "f88c704d9db00d5b77c829dd124cafea"
+        },
+        ".js": {
+          "size": 1017,
+          "hash": "367eacaff3c2a0472346e4415e241840"
+        },
+        ".d.ts": {
+          "size": 205,
+          "hash": "8862cad31750945edb9cdfdbbf96350b"
+        }
+      }
+    },
+    "injectable": {
+      "name": "injectable",
+      "version": "64dfc72cd1b2e1153b8c179210aee1c0",
+      "size": 1280,
+      "hash": "28358baee797abfe6c4b476e91e8524e",
+      "files": {
+        ".ts": {
+          "size": 544,
+          "hash": "64dfc72cd1b2e1153b8c179210aee1c0"
+        },
+        ".js.map": {
+          "size": 1207,
+          "hash": "422ac264afc78a0cc9981eb7f90c5f0f"
+        },
+        ".js": {
+          "size": 1280,
+          "hash": "28358baee797abfe6c4b476e91e8524e"
+        },
+        ".d.ts": {
+          "size": 262,
+          "hash": "2e703ec738786f1d59df0cca4c2de0fd"
+        }
+      }
+    },
+    "injector": {
+      "name": "injector",
+      "version": "193df9c3a33243f859b06c30ec6079fc",
+      "size": 5196,
+      "hash": "8747998b3828f30b26609783fa34c715",
+      "files": {
+        ".ts": {
+          "size": 4295,
+          "hash": "193df9c3a33243f859b06c30ec6079fc"
+        },
+        ".js.map": {
+          "size": 8911,
+          "hash": "69f29bce79010d50a01cbd8c8e098a33"
+        },
+        ".js": {
+          "size": 5196,
+          "hash": "8747998b3828f30b26609783fa34c715"
+        },
+        ".d.ts": {
+          "size": 1144,
+          "hash": "f4cd909957a148076bb2a81d40bc82bb"
+        }
+      }
+    },
+    "impl": {
+      "name": "impl",
+      "version": "ccf6a56600cc94565b97286344b3f4a7",
+      "size": 4369,
+      "hash": "efc6a9900805022798790c698aba6b57",
+      "files": {
+        ".ts": {
+          "size": 1601,
+          "hash": "ccf6a56600cc94565b97286344b3f4a7"
+        },
+        ".js.map": {
+          "size": 3710,
+          "hash": "617faea99afd816834a88a6bbd6fc807"
+        },
+        ".js": {
+          "size": 4369,
+          "hash": "efc6a9900805022798790c698aba6b57"
+        },
+        ".d.ts": {
+          "size": 600,
+          "hash": "a59fcdc12d73195fb6882775d5d29473"
+        }
+      }
+    },
+    "intf": {
+      "name": "intf",
+      "version": "b1478d2aa75e7abb190b367e12dd64ac",
+      "size": 593,
+      "hash": "88d357c08be3833898d899199a261fd1",
+      "files": {
+        ".ts": {
+          "size": 593,
+          "hash": "b1478d2aa75e7abb190b367e12dd64ac"
+        },
+        ".js.map": {
+          "size": 858,
+          "hash": "b77647da12101bd0c6662b32b2058f30"
+        },
+        ".js": {
+          "size": 593,
+          "hash": "88d357c08be3833898d899199a261fd1"
+        },
+        ".d.ts": {
+          "size": 547,
+          "hash": "a4c67aacb378fa22f980781b39e5da2f"
+        }
+      }
+    },
+    "main": {
+      "name": "main",
+      "version": "e9223ba15841cea426a15c273258552f",
+      "size": 1404,
+      "hash": "84d00a917c8f017c16f4950001fe7561",
+      "files": {
+        ".ts": {
+          "size": 745,
+          "hash": "e9223ba15841cea426a15c273258552f"
+        },
+        ".js.map": {
+          "size": 2018,
+          "hash": "a22427fab6b11097588e546d75e2b9f4"
+        },
+        ".js": {
+          "size": 1404,
+          "hash": "84d00a917c8f017c16f4950001fe7561"
+        },
+        ".d.ts": {
+          "size": 0,
+          "hash": "d41d8cd98f00b204e9800998ecf8427e"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "main.js",
+  "sourceRoot": "/Users/Sergey/Work/EXP/mioc/test",
+  "sources": [
+    "main.ts"
+  ],
+  "names": [],
+  "mappings": ";;QAIM,GAAG,EAUH,GAAG;;;;;;;;;;;;;YAVH,GAAG,GAAY,IAAI,gBAAQ,EAAE,CAAC;YACpC,GAAG,CAAC,IAAI,CAAC,gBAAgB,EAAC,YAAY,CAAC,CAAC;YACxC,GAAG,CAAC,IAAI,CAAC,gBAAS,EAAC,gBAAS,EAAC;gBACzB,SAAS,EAAC,IAAI;aACjB,CAAC,CAAC;YACH,GAAG,CAAC,GAAG,CAAC,gBAAS,CAAC,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC,UAAA,CAAC,IAAE,OAAA,OAAO,CAAC,IAAI,CAAC,CAAC,CAAC,EAAf,CAAe,CAAC,CAAC;YACrD,OAAO,CAAC,IAAI,CAAC,GAAG,CAAC,GAAG,CAAC,cAAU,CAAC,cAAc,CAAC,CAAC,WAAW,CAAC,IAAI,CAAC,CAAC;YAClE,OAAO,CAAC,IAAI,CAAC,GAAG,CAAC,GAAG,CAAC,gBAAS,CAAC,KAAG,GAAG,CAAC,GAAG,CAAC,gBAAS,CAAC,CAAC,CAAC;YAGhD,GAAG,GAAY,IAAI,gBAAQ,EAAE,CAAC;YACpC,GAAG,CAAC,IAAI,CAAC,cAAU,CAAC,cAAc,EAAC,iBAAU,CAAC,CAAC;YAC/C,GAAG,CAAC,GAAG,CAAC,gBAAS,CAAC,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC,UAAA,CAAC,IAAE,OAAA,OAAO,CAAC,IAAI,CAAC,CAAC,CAAC,EAAf,CAAe,CAAC,CAAC;YACrD,OAAO,CAAC,IAAI,CAAC,GAAG,CAAC,GAAG,CAAC,cAAU,CAAC,cAAc,CAAC,CAAC,WAAW,CAAC,IAAI,CAAC,CAAC;YAClE,OAAO,CAAC,IAAI,CAAC,GAAG,CAAC,GAAG,CAAC,gBAAS,CAAC,KAAG,GAAG,CAAC,GAAG,CAAC,gBAAS,CAAC,CAAC,CAAC;YAGtD,OAAO,CAAC,IAAI,CAAC,gBAAS,CAAC,SAAS,CAAC,CAAC",
+  "sourcesContent": [
+    "import { Injector,Inject } from \"mioc/index\";\nimport {SumService, MulService, Bootstrap} from \"./impl\";\nimport Interfaces from \"./intf\";\n\nconst sum:Injector = new Injector();\nsum.bind(\"IActionService\",\"SumService\");\nsum.bind(Bootstrap,Bootstrap,{\n    singleton:true\n});\nsum.get(Bootstrap).start(0).then(r=>console.info(r));\nconsole.info(sum.get(Interfaces.IActionService).constructor.name);\nconsole.info(sum.get(Bootstrap)===sum.get(Bootstrap));\n\n\nconst mul:Injector = new Injector();\nmul.bind(Interfaces.IActionService,MulService);\nmul.get(Bootstrap).start(1).then(r=>console.info(r));\nconsole.info(mul.get(Interfaces.IActionService).constructor.name);\nconsole.info(sum.get(Bootstrap)===sum.get(Bootstrap));\n\n\nconsole.info(Bootstrap.instances);"
+  ]
+}
