@@ -1,9 +1,8 @@
 {
-  "name"          : "mioc",
+  "name"          : "edi",
   "version"       : "0.0.1",
   "registry"      : "github",
   "vendor"        : "ecmal",
-  "main"          : "mioc",
   "directories"   : {
     "source"      : "src",
     "vendor"      : "out",
