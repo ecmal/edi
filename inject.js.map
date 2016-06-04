@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "inject.js",
+  "sourceRoot": "/Users/Sergey/Work/GH/ecmal/edi/src",
+  "sources": [
+    "inject.ts"
+  ],
+  "names": [],
+  "mappings": ";;IAIA;QACE,yBAAQ,GAAR,UAAS,MAAa;YAClB,OAAO,CAAC,IAAI,CAAC,MAAM,CAAC,CAAC;YACrB,MAAM,CAAC,QAAQ,CAAC,QAAQ,GAAG,IAAI,CAAC;QACpC,CAAC;;;;QACH,aAAC;QALD;YAA4B,+BAAS;QAKrC,CAAC;IAAD,CAAC,AALD,IAKC;;IALD,+BAKC,CAAA;;;;;;;;;;YAND,wBAAe,MAAM,EAAC;YACtB,qBAAA,OAA4B,sBAK3B",
+  "sourcesContent": [
+    "import {Decorator} from \"runtime/decorators\";\nimport {Member} from \"runtime/reflect/class\";\n\nexport default Inject;\nexport class Inject extends Decorator {\n  decorate(member:Member) {\n      console.info(member);\n      member.metadata.injected = true;\n  }\n}\n"
+  ]
+}

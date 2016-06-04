@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "injectable.js",
+  "sourceRoot": "/Users/Sergey/Work/GH/ecmal/edi/src",
+  "sources": [
+    "injectable.ts"
+  ],
+  "names": [],
+  "mappings": ";;IAKA;QAMW,6BAAQ,GAAf,UAAgB,MAAa;YACzB,EAAE,CAAA,CAAC,MAAM,YAAY,mBAAW,CAAC,CAAA,CAAC;gBAC9B,OAAO,CAAC,IAAI,CAAC,gBAAc,MAAM,CAAC,KAAK,CAAC,QAAQ,EAAE,MAAG,CAAC,CAAC;gBACvD,MAAM,CAAC,KAAK,CAAC,QAAQ,CAAC,UAAU,GAAG,IAAI,CAAC,OAAO,CAAC;YACpD,CAAC;QACL,CAAC;;;;QACL,iBAAC;QAVG,oBAAY,OAAW;YACnB,kBAAO,CAAC;YACR,IAAI,CAAC,OAAO,GAAG,OAAO,CAAC;QAC3B,CAAC;IAOL,CAAC,AAZD,IAYC;;IAZD,uCAYC,CAAA;;;;;;;;;;;YAbD,wBAAe,UAAU,EAAC;YAC1B,yBAAA,WAAgC,sBAY/B",
+  "sourcesContent": [
+    "import {Decorator} from \"runtime/decorators\";\nimport {Member} from \"runtime/reflect/class\";\nimport {Constructor} from \"runtime/reflect/class\";\n\nexport default Injectable;\nexport class Injectable extends Decorator {\n    public options:any;\n    constructor(options:any){\n        super();\n        this.options = options;\n    }\n    public decorate(member:Member) {\n        if(member instanceof Constructor){\n            console.info(`Injectable(${member.owner.toString()})`);\n            member.owner.metadata.injectable = this.options;\n        }\n    }\n}\n"
+  ]
+}
